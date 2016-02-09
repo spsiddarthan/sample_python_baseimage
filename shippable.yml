@@ -2,6 +2,12 @@ language: python
 
 python:
   - 3.4
+  - 2.6
+  - 2.7
+  - 3.3
+  - 3.2
+  - pypy
+  - pypy3
 
 env:
   global:
@@ -13,7 +19,7 @@ env:
 build:
   
   pre_ci_boot:
-    image_name: drydock/u12pyt
+    image_name: drydock/u14pyt
     image_tag: tip
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
