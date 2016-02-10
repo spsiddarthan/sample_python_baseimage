@@ -28,7 +28,7 @@ build:
     - coverage run `which nosetests` test.py --with-xunit --xunit-file=shippable/testresults/nosetests.xml
     - coverage xml -o shippable/codecoverage/coverage.xml
 
- integrations:
+integrations:
   
   notifications:
     - integrationName: email
