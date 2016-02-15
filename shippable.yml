@@ -56,7 +56,7 @@ integrations:
       on_start: always
       on_pull_request: always
       on_success: always
-      on_failure: change
+      on_failure: always
  
     - integrationName: irc
       type: irc
@@ -67,4 +67,4 @@ integrations:
       on_start: always
       on_pull_request: always
       on_success: always
-      on_failure: change
+      on_failure: always
