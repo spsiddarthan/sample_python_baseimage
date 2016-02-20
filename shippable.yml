@@ -1,31 +1,24 @@
 language: python
+#build_image: shippableimages/ubuntu1204_python
 
 python:
+  - 2.6
+  - 2.7
+  - 3.2
+  - 3.3
   - 3.4
+  - pypy
 
-env:
-  global:
-    - FOO=FUBU
+install:
+  - pip install -r requirements.txt
 
-  matrix:
-    - M1=ONE
+# Make folders for the reports
+before_script:
+  - mkdir -p shippable/testresults
+  - mkdir -p shippable/codecoverage
 
-build:
-  
-  pre_ci_boot:
-    image_name: drydock/u12pyt
-    image_tag: tip
-    pull: true
-    options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
+script:
+  - which python
+  - coverage run `which nosetests` test.py --with-xunit --xunit-file=shippable/testresults/nosetests.xml
+  - coverage xml -o shippable/codecoverage/coverage.xml
 
-  ci:
-    - ps -eax
-    - ls -al
-    - pip install -r requirements.txt
-    - mkdir -p shippable/testresults
-    - mkdir -p shippable/codecoverage
-    - which python
-    - coverage run `which nosetests` test.py --with-xunit --xunit-file=shippable/testresults/nosetests.xml
-    - coverage xml -o shippable/codecoverage/coverage.xml
-
-  
