@@ -25,9 +25,7 @@ build:
     - mkdir -p shippable/testresults
     - mkdir -p shippable/codecoverage
     - cp testresults2.xml  ./shippable/testresults
-   # - which python
-    #- coverage run `which nosetests` test.py --with-xunit --xunit-file=shippable/testresults/nosetests.xml
-    #- coverage xml -o shippable/codecoverage/coverage.xml
+  
   on_success:
     - echo "build success"
   on_failure:
