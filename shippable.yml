@@ -7,6 +7,7 @@ python:
 env:
   global:
     - FOO=FUBU
+    - M2=two
 
   matrix:
     - M1=ONE
