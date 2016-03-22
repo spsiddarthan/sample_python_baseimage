@@ -5,12 +5,11 @@ python:
  # - 2.7
 
 env:
-  global:
-    - FOO=FUBU
-    - M2=two
+  - FOO=FUBU
+  - M2=two
 
-  matrix:
-    - M1=ONE
+  #matrix:
+   # - M1=ONE
 
 build:
   
