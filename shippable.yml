@@ -64,6 +64,9 @@ integrations:
       on_pull_request: always
       on_success: always
       on_failure: always
+      branches:
+            only:
+                - test*
  
     - integrationName: irc
       type: irc
@@ -75,3 +78,6 @@ integrations:
       on_pull_request: always
       on_success: always
       on_failure: always
+      branches:
+            only:
+                - test*
