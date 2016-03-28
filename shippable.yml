@@ -14,7 +14,7 @@ env:
     - M1=ONE
 branches:
  only:
-   - "test/*"
+   - "test*"
 
 build:
   
@@ -55,7 +55,7 @@ integrations:
       on_failure: always
       branches:
             only:
-                - "test/branches-1"
+                - "test*"
 
     - integrationName: ship-slack
       type: slack
@@ -69,7 +69,7 @@ integrations:
       on_failure: always
       branches:
             only:
-                - "test/branches-1"
+                - "test*"
  
     - integrationName: irc
       type: irc
@@ -83,4 +83,4 @@ integrations:
       on_failure: always
       branches:
             only:
-                - "test/branches-1"
+                - "test*"
