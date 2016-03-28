@@ -12,6 +12,9 @@ env:
 
   matrix:
     - M1=ONE
+branches:
+ except:
+   - "test/*"
 
 build:
   
