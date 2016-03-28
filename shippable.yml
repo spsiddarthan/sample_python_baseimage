@@ -53,7 +53,7 @@ integrations:
       on_failure: always
       branches:
             only:
-                - "*ing2*"
+                - "test*"
 
     - integrationName: ship-slack
       type: slack
@@ -67,7 +67,7 @@ integrations:
       on_failure: always
       branches:
             only:
-                - "*ing2"
+                - "test*"
  
     - integrationName: irc
       type: irc
@@ -81,4 +81,4 @@ integrations:
       on_failure: always
       branches:
             only:
-                - "*ing2"
+                - "test*"
