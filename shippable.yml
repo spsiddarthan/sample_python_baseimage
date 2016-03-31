@@ -72,3 +72,14 @@ integrations:
       on_pull_request: always
       on_success: always
       on_failure: always
+      
+    - integrationName: ship-hipchat
+      type: hipchat
+      recipients: 
+        - "#pvt-room"
+        - @shiphitchcock2
+      
+      on_start: always
+      on_pull_request: always
+      on_success: always
+      on_failure: always
