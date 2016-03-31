@@ -58,5 +58,12 @@ integrations:
       recipients: 
         - "chat.freenode.net#test-cock"
         - "chat.freenode.net#hitchcok2-irc"
+    
+    - integrationName: ship-hipchat
+      type: hipchat
+      recipients: 
+        - "#pvt-room"
+        - "@shiphitchcock2"
+        - "#pub-room"
       
       
