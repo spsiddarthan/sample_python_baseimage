@@ -71,7 +71,7 @@ integrations:
       on_success: always
       on_failure: always
    
-   - integrationName: ship-hipchat
+    - integrationName: ship-hipchat
       type: hipchat
       recipients: 
         - "#pvt-room"
