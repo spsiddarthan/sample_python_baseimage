@@ -77,7 +77,7 @@ integrations:
       type: hipchat
       recipients: 
         - "#pvt-room"
-        - @shiphitchcock2
+        - "@shiphitchcock2"
       
       on_start: always
       on_pull_request: always
