@@ -52,7 +52,7 @@ integrations:
       recipients: 
         - "#hitchcock1-public"
         - pvt-channel
-      on_start: always
+     # on_start: always
       on_success: never
       on_failure: always
  
