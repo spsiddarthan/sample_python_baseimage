@@ -50,6 +50,7 @@ integrations:
       recipients: 
         - "#hitchcock1-public"
         - pvt-channel
+        - #builds-vr
       
       
  
