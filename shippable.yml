@@ -44,9 +44,7 @@ integrations:
         - shiphitchcock2@gmail.com
       #  - vidya@shippable.com
       
-      on_pull_request: always
-      on_start: always
-      on_success: always
+      on_success: never
       on_failure: always
 
     - integrationName: ship-slack
@@ -55,9 +53,8 @@ integrations:
         - "#hitchcock1-public"
         - pvt-channel
       
-      on_start: always
-      on_pull_request: always
-      on_success: always
+      
+      on_success: never
       on_failure: always
  
     - integrationName: irc
@@ -66,9 +63,8 @@ integrations:
         - "chat.freenode.net#test-cock"
         - "chat.freenode.net#hitchcok2-irc"
       
-      on_start: always
-      on_pull_request: always
-      on_success: always
+      
+      on_success: never
       on_failure: always
    
     - integrationName: ship-hipchat
@@ -77,7 +73,6 @@ integrations:
         - "#pvt-room"
         - "@shiphitchcock2"
       
-      on_start: always
-      on_pull_request: always
-      on_success: always
+      
+      on_success: never
       on_failure: always  
