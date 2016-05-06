@@ -80,6 +80,7 @@ integrations:
       recipients: 
         - "#pvt-room"
         - "@shiphitchcock2"
+        - "#pub-room"
       
       on_start: always
       on_pull_request: always
