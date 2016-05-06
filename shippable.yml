@@ -81,6 +81,7 @@ integrations:
         - "#pvt-room"
         - "@shiphitchcock2"
         - "#pub-room"
+        - "#Zurtr"
       
       on_start: always
       on_pull_request: always
