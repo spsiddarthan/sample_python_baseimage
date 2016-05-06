@@ -78,9 +78,9 @@ integrations:
     - integrationName: ship-hipchat
       type: hipchat
       recipients: 
-        - "#pvt-room"
-        - "@shiphitchcock2"
-        - "#pub-room"
+      #  - "#pvt-room"
+       # - "@shiphitchcock2"
+      #  - "#pub-room"
         - "#Zurtr"
       
       on_start: always
