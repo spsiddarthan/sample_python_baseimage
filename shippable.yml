@@ -87,6 +87,8 @@ integrations:
      
     - integrationName: test-wh-fail
       type: webhook
+      payload:
+        - title=success - $REPO_FULL_NAME - $BUILD_NUMBER
       
       on_success: always
       on_start: always
