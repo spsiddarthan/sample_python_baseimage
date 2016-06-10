@@ -88,7 +88,7 @@ integrations:
     - integrationName: test-wh-fail
       type: webhook
       payload:
-        - title=success - $REPO_FULL_NAME - $BUILD_NUMBER
+        - title=success - $REPO_FULL_NAME 
         - body=Shippable Run $BUILD_NUMBER ($BUILD_URL) successs for $COMPARE_URL
         - component=$REPO_NAME
         - version=$COMMIT
