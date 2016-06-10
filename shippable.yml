@@ -104,11 +104,7 @@ integrations:
       payload:
         - title=success testissucecreattion2 - $REPO_FULL_NAME - $BUILD_NUMBER
         - body=Shippable Run $BUILD_NUMBER ($BUILD_URL) successs for $COMPARE_URL
-        - component=$REPO_NAME
-        - version=$COMMIT
-        - description=$COMPARE_URL
-        - owner=$ORG_NAME
-        - source=Shippable
+        
       on_success: always
       on_start: always
       on_failure: always
