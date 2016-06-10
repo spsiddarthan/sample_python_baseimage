@@ -87,14 +87,7 @@ integrations:
      
     - integrationName: test-wh-fail
       type: webhook
-      payload:
-        - title= test issue
-        - body=Shippable Run $BUILD_NUMBER ($BUILD_URL) successs for $COMPARE_URL
-        - component=$REPO_NAME
-        - version=$COMMIT
-        - description=$COMPARE_URL
-        - owner=$ORG_NAME
-        - source=Shippable
+      
       on_success: always
       on_start: always
       on_failure: never
