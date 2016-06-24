@@ -36,6 +36,7 @@ build:
   on_failure:
     - echo "build failed"
   
+  
 integrations:
   
   notifications:
