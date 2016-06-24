@@ -47,8 +47,7 @@ integrations:
         - shiphitchcock2@gmail.com
         - vidya@shippable.com
       
-      on_pull_request: always
-      on_start: always
+      
       on_success: always
       on_failure: always
       
@@ -58,8 +57,7 @@ integrations:
         - "#hitchcock1-public"
         - pvt-channel
       
-      on_start: never
-      on_pull_request: always
+      
       on_success: always
       on_failure: always
  
@@ -82,8 +80,7 @@ integrations:
       #  - "#pub-room"
         - "#Zurtr"
       
-      on_start: always
-      on_pull_request: always
+      
       on_success: always
       on_failure: always
      
@@ -98,7 +95,7 @@ integrations:
         - owner=$ORG_NAME
         - source=Shippable
       on_success: always
-      on_start: always
+     
       on_failure: never
   
     - integrationName: test-issuecreation2
@@ -108,5 +105,5 @@ integrations:
         - body=Shippable Run $BUILD_NUMBER ($BUILD_URL) successs for $COMPARE_URL
         
       on_success: always
-      on_start: always
+      
       on_failure: always
